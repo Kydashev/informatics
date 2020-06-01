@@ -32,11 +32,20 @@ begin
   PB := GetRhombusPerimeter(B);
 
   if (PA > PB) then
-    WriteLn('Per A > Per B')
+  begin
+    WriteLn('Per A > Per B');
+    WriteLn('Per: ', PA:0:6);
+  end
   else if (PA < PB) then
-    WriteLn('Per A < Per B')
+  begin
+    WriteLn('Per A < Per B');
+    WriteLn('Per: ', PB:0:6);
+  end
   else
+  begin
     WriteLn('Per A = Per B');
+    WriteLn('Per: ', PA:0:6);
+  end;
 
   {WriteLn('AB = ', GetDistance(Tri.A, Tri.B):0:6);
   WriteLn('BC = ', GetDistance(Tri.B, Tri.C):0:6);
